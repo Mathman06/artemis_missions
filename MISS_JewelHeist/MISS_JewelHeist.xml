@@ -1,0 +1,571 @@
+<mission_data version="1.0" background_id_arme="96b21ba6-8ea6-4b8b-89f7-cc77e6db4f39" playerShipNames_arme="Phantom_Pulsar\Intrepid\Aegis\Horatio\Excalibur\Hera\Ceres\Diana">
+  <mission_description>   Long ago, Torgoth legends spoke of a powerful ship originating from Ximni space believed to signal the dawn of a new age. It is said that untold fortune would await any captain and crew that could control this vessel.^   Recently, rumors from a marginalized faction of Torgoth whale sympathizers have surfaced, describing a Ximni ship they believe to be the one fortold in the prophecies. They spoke of a ship with incredible firepower, striking from more than double the range of its best-equipped rivals, destroying everything in its path.^   Now, informants with ties to the Arvonian spy network have traced its jump signature to the Obscuritas sector, deep in Ximni territory, where it is undergoing repairs. As an up-and-coming crew of ruffians and scofflaws, you have tasked yourselves with the acquisition of this crown jewel of the Ximni fleet, the Opulent Diadem. Avoiding detection in your scout ship, the Phantom Pulsar, your crew has made the treacherous journey to the edge of the sector.^   Will you achieve fame and glory, or will your ship be lost to Obscuritas? In this tactical game of space checkers, you're but a few jumps away from becoming a true pirate king!</mission_description>
+  <start id_arme="96b21ba6-8ea6-4b8b-89f7-cc77e6db4f39">
+    <create count="20" type="nebulas" nebType="3" startX="52075.0" startY="0.0" startZ="89871.0" radius="5000" randomRange="5000" />
+    <create count="20" type="nebulas" nebType="2" startX="89273.0" startY="0.0" startZ="31298.0" radius="5000" randomRange="5000" randomSeed="28" />
+    <create count="20" type="mines" startX="60218.0" startY="0.0" startZ="99551.0" endX="52962.0" endY="0.0" endZ="75870.0" />
+    <create count="20" type="mines" startX="36442.0" startY="0.0" startZ="50779.0" endX="48286.0" endY="0.0" endZ="64649.0" />
+    <create count="20" type="mines" startX="910.0" startY="0.0" startZ="42701.0" endX="24111.0" endY="0.0" endZ="46696.0" />
+    <create count="10" type="asteroids" startX="24418.0" startY="500.0" startZ="29026.0" endX="24418.0" endY="-500.0" endZ="29026.0" randomRange="7500" />
+    <create count="20" type="asteroids" startX="41319.0" startY="500.0" startZ="32407.0" endX="41319.0" endY="-500.0" endZ="32407.0" randomRange="7500" randomSeed="1" />
+    <create count="10" type="asteroids" startX="54226.0" startY="500.0" startZ="43469.0" endX="54226.0" endY="-500.0" endZ="43469.0" randomRange="7500" randomSeed="2" />
+    <create count="20" type="asteroids" startX="63138.0" startY="500.0" startZ="54839.0" endX="63138.0" endY="-500.0" endZ="54839.0" randomRange="7500" randomSeed="3" />
+    <create count="10" type="asteroids" startX="66210.0" startY="500.0" startZ="71434.0" endX="66057.0" endY="-500.0" endZ="71434.0" randomRange="7500" randomSeed="4" />
+    <create count="20" type="nebulas" nebType="2" startX="90794.0" startY="0.0" startZ="47772.0" radius="5000" randomRange="5000" randomSeed="29" />
+    <create count="20" type="nebulas" nebType="3" startX="49463.0" startY="0.0" startZ="10588.0" radius="5000" randomRange="5000" randomSeed="31" />
+    <create count="20" type="nebulas" nebType="2" startX="16582.0" startY="0.0" startZ="18117.0" radius="5000" randomRange="5000" randomSeed="32" />
+    <set_player_carried_type player_slot="0" bay_slot="0" raceKeys="TSN" hullKeys="TSN LR Shuttle" name="Capacious_Capsule" />
+    <create type="station" x="48910.0" y="0.0" z="70727.0" angle="0" name="Hotel Quebec" raceKeys="Terran" hullKeys="Command Base" sideValue="3" />
+    <create type="station" x="29897.0" y="0.0" z="50467.0" angle="0" name="Delta Sierra Niner" raceKeys="Terran" hullKeys="Deep Space Base" sideValue="3" />
+    <create type="station" x="67611.0" y="0.0" z="34415.0" angle="0" name="Fjord Meteor Company" raceKeys="Terran" hullKeys="Industrial Base" sideValue="3" />
+    <create type="station" x="28494.0" y="0.0" z="11506.0" angle="0" name="Obsidian Plateau" raceKeys="Terran" hullKeys="Science Base" sideValue="3" />
+    <create type="station" x="86312.0" y="0.0" z="79298.0" angle="0" name="Notre Dame du Ciel" raceKeys="Terran" hullKeys="Civilian Base" sideValue="3" />
+    <create type="blackHole" x="68976.0" y="0.0" z="10281.0" />
+    <create type="blackHole" x="12126.0" y="0.0" z="70665.0" />
+    <create type="monster" monsterType="5" x="58835.0" y="0.0" z="47157.0" angle="128.9" name="Pigpen" />
+    <create type="Anomaly" pickupType="0" x="94789.0" y="0.0" z="48847.0" name="Fuel Tank" />
+    <create type="Anomaly" pickupType="0" x="54994.0" y="0.0" z="11357.0" name="Fuel Tank" />
+    <create type="neutral" x="27798.0" y="0.0" z="94020.0" angle="83.4" name="101101" raceKeys="Arvonian" hullKeys="Light Carrier" />
+    <create type="player" player_slot="0" x="12433.0" y="0.0" z="96478.0" angle="307.2" name="Phantom_Pulsar" sideValue="2" raceKeys="Pirate" hullKeys="Longbow" warp="no" jump="yes" />
+    <create type="monster" monsterType="1" podnumber="1" x="39168.0" y="0.0" z="95096.0" angle="83.4" />
+    <create type="monster" monsterType="1" podnumber="1" x="36863.0" y="0.0" z="95096.0" angle="83.4" />
+    <create type="monster" monsterType="1" podnumber="1" x="38246.0" y="0.0" z="94174.0" angle="83.4" />
+    <create type="monster" monsterType="1" podnumber="1" x="38093.0" y="0.0" z="95096.0" angle="83.4" />
+    <set_difficulty_level value="5" />
+    <set_skybox_index index="10" />
+    <set_object_property property="nebulaIsOpaque" value="1" />
+    <set_object_property property="sensorSetting" value="1" />
+    <set_object_property property="nonPlayerSpeed" value="100" />
+    <set_object_property property="nonPlayerShield" value="100" />
+    <set_object_property property="nonPlayerWeapon" value="100" />
+    <set_object_property property="playerWeapon" value="100" />
+    <set_object_property property="playerShields" value="100" />
+    <big_message title="Jewel Heist" subtitle1="by Matthew Vicksell" subtitle2="adventure for Artemis 2.7" />
+    <set_timer name="start_mission_timer_1" seconds="10" />
+    <set_variable name="player_spotted" value="0.0" integer="yes" />
+    <set_variable name="chapter_1" value="1" integer="yes" />
+    <set_variable name="ship_captured" value="0.0" integer="yes" />
+    <set_variable name="spotted_by_station" value="0.0" integer="yes" />
+    <set_variable name="spotted_by_Brawny" value="0.0" integer="yes" />
+    <set_variable name="spotted_by_Obstinate" value="0.0" integer="yes" />
+    <set_variable name="spotted_by_Sheriff" value="0.0" integer="yes" />
+    <set_variable name="spotted_by_Deputy" value="0.0" integer="yes" />
+    <set_variable name="spotted_by_Diadem" value="0.0" integer="yes" />
+    <set_variable name="spotted_by_Interceptor" value="0.0" integer="yes" />
+    <set_variable name="nebula_get" value="0.0" integer="yes" />
+    <set_variable name="comms_init" value="0.0" integer="yes" />
+    <set_variable name="diadem_stop" value="0.0" integer="yes" />
+    <set_variable name="tagged_pigpen" value="0.0" integer="yes" />
+    <set_variable name="threshold" value="0.0" integer="yes" />
+    <set_variable name="vig_node_dropped" value="0.0" integer="yes" />
+    <set_variable name="zapped" value="0.0" integer="yes" />
+  </start>
+  <event name="Checkpoint1" id_arme="7cd9f8ce-f659-438e-b04a-42104f6930ab">
+    <if_variable name="chapter_1" comparator="EQUALS" value="1.0" />
+    <create type="enemy" x="3214.0" y="0.0" z="38245.0" angle="321.2" name="BAMF Opulent Diadem" raceKeys="Ximni" hullKeys="Battleship" sideValue="3" fleetnumber="1" />
+    <create type="enemy" x="46697.0" y="0.0" z="72970.0" angle="32.2" name="BAMF Brawny" raceKeys="Ximni" hullKeys="Missile Cruiser" sideValue="3" fleetnumber="2" />
+    <create type="enemy" x="31025.0" y="0.0" z="48386.0" angle="299.2" name="BAMF Obstinant" raceKeys="Ximni" hullKeys="Dreadnought" sideValue="3" fleetnumber="3" />
+    <create type="enemy" x="87414.0" y="0.0" z="73431.0" angle="128.9" name="BAMF Sheriff" raceKeys="Ximni" hullKeys="Light Cruiser" sideValue="3" fleetnumber="4" />
+    <create type="enemy" x="70666.0" y="0.0" z="35787.0" angle="73.4" name="BAMF Interceptor" raceKeys="Ximni" hullKeys="Carrier" sideValue="3" fleetnumber="5" />
+    <create type="enemy" x="51921.0" y="0.0" z="17503.0" angle="170.4" name="BAMF Deputy" raceKeys="Ximni" hullKeys="Scout" sideValue="3" fleetnumber="6" />
+    <set_object_property property="positionX" value="12433.0" name="Phantom_Pulsar" />
+    <set_object_property property="positionZ" value="96478.0" name="Phantom_Pulsar" />
+    <set_variable name="chapter_1" value="2.0" integer="yes" />
+    <set_variable name="player_spotted" value="0.0" integer="yes" />
+    <warning_popup_message message="Checkpoint" consoles="M" name="Phantom_Pulsar" />
+    <set_ship_text name="101101" desc="A typical group of whale watchers" scan_desc="These Arvonians may be able to help your efforts, for a price.  " hailtext="So you want the Diadem?  If you do us a favor to help us study the Charybdis, we'll give you the access codes to activate our sleeper agent on board that vessel.  We need a sample of the nebula gas it excretes, telemetry data tracking the effects of its attacks, and finally a tag on it to monitor its movements in the sector." />
+    <set_variable name="FMC_shrouded" value="0.0" integer="yes" />
+  </event>
+  <event name="Comms Init Fix" id_arme="3bbf235b-6112-45eb-82cf-e481f6213c55">
+    <if_timer_finished name="start_mission_timer_1" />
+    <if_variable name="comms_init" comparator="EQUALS" value="0.0" />
+    <set_variable name="comms_init" value="1.0" integer="yes" />
+    <incoming_comms_text from="Ship Computer" sideValue="2" type="STATUS">Welcome to the Obscuritas sector. Be advised that there are several ships patrolling this region deep inside Ximni territory. Being detected by them or the bases prior to capturing the Diadem will automatically trigger a time jump to the start of the mission. After that, you'll be on your own. Good luck.</incoming_comms_text>
+  </event>
+  <folder_arme name="Ships and Routes" id_arme="c01db4c0-343f-496d-b456-95d539e1eb07" expanded_arme="" />
+  <event name="Patrols Init" id_arme="42e3ee07-7c9f-415c-9aab-c6d6467d7f0f" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_timer_finished name="start_mission_timer_1" />
+    <if_variable name="chapter_1" comparator="EQUALS" value="2.0" />
+    <add_ai type="TARGET_THROTTLE" value1="0.2" targetName="Obsidian Plateau" name="BAMF Opulent Diadem" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Hotel Quebec" name="BAMF Obstinant" />
+    <add_ai type="POINT_THROTTLE" value1="26108.0" value2="0.0" value3="70051.0" value4="1.0" name="BAMF Brawny" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Hotel Quebec" name="BAMF Sheriff" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Notre Dame du Ciel" name="BAMF Interceptor" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Fjord Meteor Company" name="BAMF Deputy" />
+    <set_variable name="chapter_1" value="3.0" integer="yes" />
+    <set_variable name="Obstinant_target" value="0.0" integer="yes" />
+    <set_variable name="Brawny_target" value="0.0" integer="yes" />
+    <set_variable name="Deputy_target" value="0.0" integer="yes" />
+    <set_variable name="Sheriff_target" value="0.0" integer="yes" />
+    <set_variable name="Interceptor_target" value="0.0" integer="yes" />
+    <set_special name="BAMF Brawny" ability="Teleport" />
+    <set_special name="BAMF Obstinant" ability="Teleport" />
+    <set_special name="BAMF Sheriff" ability="Teleport" />
+    <set_special name="BAMF Interceptor" ability="Teleport" />
+    <set_special name="BAMF Deputy" ability="Teleport" />
+    <incoming_comms_text from="Ship Computer" sideValue="2" type="STATUS">The elite Ximni ships of the Obscuritas sector are given the designation "BAMF" or "Bunenag Aŝor Mokamer Flaz," which roughly translates to "Really expensive star murderer."</incoming_comms_text>
+  </event>
+  <event name="Obstinant Reaches HQ" id_arme="87ac4969-2d78-4570-92d3-03af56160718" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Obstinant" name2="Hotel Quebec" comparator="LESS" value="1000.0" />
+    <if_variable name="Obstinant_target" comparator="EQUALS" value="0.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Fjord Meteor Company" value2="1" name="BAMF Obstinant" />
+    <set_variable name="Obstinant_target" value="1.0" integer="yes" />
+  </event>
+  <event name="Obstinant Reaches FMC" id_arme="e9e9788e-f49c-4982-b526-82f41c6f7f83" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Obstinant" name2="Fjord Meteor Company" comparator="LESS" value="1000.0" />
+    <if_variable name="Obstinant_target" comparator="EQUALS" value="1.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Delta Sierra Niner" value2="1" name="BAMF Obstinant" />
+    <set_variable name="Obstinant_target" value="2.0" integer="yes" />
+  </event>
+  <event name="Obstinant Reaches DSN" id_arme="ead09673-c594-4a27-8bda-f3af19cc5a24" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Obstinant" name2="Delta Sierra Niner" comparator="LESS" value="1000.0" />
+    <if_variable name="Obstinant_target" comparator="EQUALS" value="2.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Hotel Quebec" value2="1" name="BAMF Obstinant" />
+    <set_variable name="Obstinant_target" value="0.0" integer="yes" />
+  </event>
+  <event name="Interceptor Reaches ND" id_arme="f8148385-e3e5-4499-8c7a-a47f0e40308c" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Interceptor" name2="Notre Dame du Ciel" comparator="LESS" value="1000.0" />
+    <if_variable name="Interceptor_target" comparator="EQUALS" value="0.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Hotel Quebec" value2="1" name="BAMF Interceptor" />
+    <set_variable name="Interceptor_target" value="1.0" integer="yes" />
+  </event>
+  <event name="Interceptor Reaches HQ" id_arme="fc559c52-c197-416b-aa1c-a46525af8b7c" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Interceptor" name2="Hotel Quebec" comparator="LESS" value="1000.0" />
+    <if_variable name="Interceptor_target" comparator="EQUALS" value="1.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Fjord Meteor Company" value2="1" name="BAMF Interceptor" />
+    <set_variable name="Interceptor_target" value="2.0" integer="yes" />
+  </event>
+  <event name="Interceptor Reaches FMC" id_arme="02bdf54f-d11a-4d3a-8335-d2e4cf5c8be4" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Interceptor" name2="Fjord Meteor Company" comparator="LESS" value="1000.0" />
+    <if_variable name="Interceptor_target" comparator="EQUALS" value="2.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Notre Dame du Ciel" value2="1" name="BAMF Interceptor" />
+    <set_variable name="Interceptor_target" value="0.0" integer="yes" />
+  </event>
+  <event name="Sheriff Reaches HQ" id_arme="a0e07cfe-f8dd-44be-98e9-b9774a1ae55f" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Sheriff" name2="Hotel Quebec" comparator="LESS" value="1000.0" />
+    <if_variable name="Sheriff_target" comparator="EQUALS" value="0.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Fjord Meteor Company" value2="1" name="BAMF Sheriff" />
+    <set_variable name="Sheriff_target" value="1.0" integer="yes" />
+  </event>
+  <event name="Sheriff Reaches FMC" id_arme="7b5360b0-278e-46f7-8fe7-f6d02fb6cff4" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Sheriff" name2="Fjord Meteor Company" comparator="LESS" value="1000.0" />
+    <if_variable name="Sheriff_target" comparator="EQUALS" value="1.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Notre Dame du Ciel" value2="1" name="BAMF Sheriff" />
+    <set_variable name="Sheriff_target" value="2.0" integer="yes" />
+  </event>
+  <event name="Sheriff Reaches ND" id_arme="3f8fdc26-9f71-4e10-a093-5dd0b9a9bef1" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Sheriff" name2="Notre Dame du Ciel" comparator="LESS" value="1000.0" />
+    <if_variable name="Sheriff_target" comparator="EQUALS" value="2.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Hotel Quebec" value2="1" name="BAMF Sheriff" />
+    <set_variable name="Sheriff_target" value="0.0" integer="yes" />
+  </event>
+  <event name="Brawny Reaches FP" id_arme="f4e34480-16dd-4aef-8f8e-3a998675dab1" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_inside_sphere name="BAMF Brawny" centerX="26108.0" centerY="0.0" centerZ="70051.0" radius="1000" />
+    <if_variable name="Brawny_target" comparator="EQUALS" value="0.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Delta Sierra Niner" value2="1" name="BAMF Brawny" />
+    <set_variable name="Brawny_target" value="1.0" integer="yes" />
+  </event>
+  <event name="Brawny Reaches DSN" id_arme="7d4fb212-c142-4250-ba92-9ee7eab3ed49" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Brawny" name2="Delta Sierra Niner" comparator="LESS" value="1000.0" />
+    <if_variable name="Brawny_target" comparator="EQUALS" value="1.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Hotel Quebec" value2="1" name="BAMF Brawny" />
+    <set_variable name="Brawny_target" value="2.0" integer="yes" />
+  </event>
+  <event name="Brawny Reaches HQ" id_arme="764a39c2-c8d0-43af-8d40-9f0cfb5a4626" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Obstinant" name2="Hotel Quebec" comparator="LESS" value="1000.0" />
+    <if_variable name="Brawny_target" comparator="EQUALS" value="2.0" />
+    <add_ai type="POINT_THROTTLE" value1="26108.0" value2="0.0" value3="70051.0" value4="1.0" name="BAMF Brawny" />
+    <set_variable name="Brawny_target" value="0.0" integer="yes" />
+  </event>
+  <event name="Deputy Reaches FMC" id_arme="94c7633b-db3e-4d86-a8c7-755510913f8b" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Deputy" name2="Fjord Meteor Company" comparator="LESS" value="1000.0" />
+    <if_variable name="Deputy_target" comparator="EQUALS" value="0.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Delta Sierra Niner" value2="1" name="BAMF Deputy" />
+    <set_variable name="Deputy_target" value="1.0" integer="yes" />
+  </event>
+  <event name="Deputy Reaches DSN" id_arme="e4a3b445-8937-436e-8f32-754f44ee55a5" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_distance name1="BAMF Deputy" name2="Delta Sierra Niner" comparator="LESS" value="1000.0" />
+    <if_variable name="Deputy_target" comparator="EQUALS" value="1.0" />
+    <add_ai type="POINT_THROTTLE" value1="51921.0" value2="0.0" value3="17503.0" value4="1.0" name="BAMF Deputy" />
+    <set_variable name="Deputy_target" value="2.0" integer="yes" />
+  </event>
+  <event name="Deputy Reaches RP" id_arme="ee760e67-b8a3-4ad6-902b-c66cad2237ba" parent_id_arme="c01db4c0-343f-496d-b456-95d539e1eb07">
+    <if_inside_sphere name="BAMF Deputy" centerX="51921.0" centerY="0.0" centerZ="17503.0" radius="1000" />
+    <if_variable name="Deputy_target" comparator="EQUALS" value="2.0" />
+    <add_ai type="TARGET_THROTTLE" value1="1.0" targetName="Fjord Meteor Company" value2="1" name="BAMF Deputy" />
+    <set_variable name="Deputy_target" value="0.0" integer="yes" />
+  </event>
+  <folder_arme name="Stealth Fails" id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148" expanded_arme="" />
+  <event name="Brawny Senses Player" id_arme="45ecfa14-5678-4358-b2c5-e28fd313fde1" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Brawny" comparator="LESS_EQUAL" value="3000.0" />
+    <if_variable name="spotted_by_Brawny" comparator="EQUALS" value="0.0" />
+    <set_timer name="Brawny_spots_player" seconds="10" />
+    <set_variable name="spotted_by_Brawny" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Player Eludes Brawny" id_arme="56411a31-4291-417f-8f0f-f5aeabfdde71" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Brawny" comparator="GREATER" value="3000.0" />
+    <if_variable name="spotted_by_Brawny" comparator="EQUALS" value="1.0" />
+    <set_timer name="Brawny_spots_player" seconds="1000000" />
+    <set_variable name="spotted_by_Brawny" value="0.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Evaded!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Brawny Catches Player" id_arme="1cf1e05d-defe-4ddd-8b64-0d238bd0fdf9" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Brawny" comparator="LESS_EQUAL" value="3000.0" />
+    <if_variable name="spotted_by_Brawny" comparator="EQUALS" value="1.0" />
+    <if_timer_finished name="Brawny_spots_player" />
+    <set_variable name="player_spotted" value="1.0" integer="yes" />
+    <set_variable name="spotted_by_Brawny" value="0.0" integer="yes" />
+  </event>
+  <event name="Obstinate Senses Player" id_arme="c5c94410-9274-41b4-b92e-2515b461004b" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Obstinate" comparator="LESS_EQUAL" value="3000.0" />
+    <if_variable name="spotted_by_Obstinate" comparator="EQUALS" value="0.0" />
+    <set_timer name="Obstinate_spots_player" seconds="10" />
+    <set_variable name="spotted_by_Obstinate" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Player Eludes Obstinate" id_arme="8361e3b3-56d9-4255-bbf2-27132784103e" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Obstinate" comparator="GREATER" value="3000.0" />
+    <if_variable name="spotted_by_Obstinate" comparator="EQUALS" value="1.0" />
+    <set_timer name="Obstinate_spots_player" seconds="1000000" />
+    <set_variable name="spotted_by_Obstinate" value="0.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Evaded!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Obstinate Catches Player" id_arme="86a8d10d-0d6f-44fb-9e01-ddc9bbae2e9f" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Obstinate" comparator="LESS_EQUAL" value="3000.0" />
+    <if_variable name="spotted_by_Obstinate" comparator="EQUALS" value="1.0" />
+    <if_timer_finished name="Obstinate_spots_player" />
+    <set_variable name="player_spotted" value="1.0" integer="yes" />
+    <set_variable name="spotted_by_Obstinate" value="0.0" integer="yes" />
+  </event>
+  <event name="Sheriff Senses Player" id_arme="6caebc3d-b3ef-4a2b-a7fa-afb0c375974b" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Sheriff" comparator="LESS_EQUAL" value="3000.0" />
+    <if_variable name="spotted_by_Sheriff" comparator="EQUALS" value="0.0" />
+    <set_timer name="Sheriff_spots_player" seconds="10" />
+    <set_variable name="spotted_by_Sheriff" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Player Eludes Sheriff" id_arme="0bebf0be-9d3c-49e8-836c-4bb4cba62dff" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Sheriff" comparator="GREATER" value="3000.0" />
+    <if_variable name="spotted_by_Sheriff" comparator="EQUALS" value="1.0" />
+    <set_timer name="Sheriff_spots_player" seconds="1000000" />
+    <set_variable name="spotted_by_Sheriff" value="0.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Evaded!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Sheriff Catches Player" id_arme="21519aaa-1584-4d1b-a86f-5bb78906f732" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Sheriff" comparator="LESS_EQUAL" value="3000.0" />
+    <if_variable name="spotted_by_Sheriff" comparator="EQUALS" value="1.0" />
+    <if_timer_finished name="Sheriff_spots_player" />
+    <set_variable name="player_spotted" value="1.0" integer="yes" />
+    <set_variable name="spotted_by_Sheriff" value="0.0" integer="yes" />
+  </event>
+  <event name="Deputy Senses Player" id_arme="bae0e8d9-d0f1-4539-ac4d-999c1a8f418a" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Deputy" comparator="LESS_EQUAL" value="3000.0" />
+    <if_variable name="spotted_by_Deputy" comparator="EQUALS" value="0.0" />
+    <set_timer name="Deputy_spots_player" seconds="10" />
+    <set_variable name="spotted_by_Deputy" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Player Eludes Deputy" id_arme="f6c5cf20-5be4-4193-8c42-fa702d38a364" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Deputy" comparator="GREATER" value="3000.0" />
+    <if_variable name="spotted_by_Deputy" comparator="EQUALS" value="1.0" />
+    <set_timer name="Deputy_spots_player" seconds="1000000" />
+    <set_variable name="spotted_by_Deputy" value="0.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Evaded!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Deputy Catches Player" id_arme="fb6a96af-3482-4126-8a89-a26d934ffec6" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Deputy" comparator="LESS_EQUAL" value="3000.0" />
+    <if_variable name="spotted_by_Deputy" comparator="EQUALS" value="1.0" />
+    <if_timer_finished name="Deputy_spots_player" />
+    <set_variable name="player_spotted" value="1.0" integer="yes" />
+    <set_variable name="spotted_by_Deputy" value="0.0" integer="yes" />
+  </event>
+  <event name="Interceptor Senses Player" id_arme="2705c351-84cc-4dea-985f-38899e55555c" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Interceptor" comparator="LESS_EQUAL" value="3000.0" />
+    <if_variable name="spotted_by_Interceptor" comparator="EQUALS" value="0.0" />
+    <set_timer name="Interceptor_spots_player" seconds="10" />
+    <set_variable name="spotted_by_Interceptor" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Player Eludes Interceptor" id_arme="60c8380d-8289-4ce6-a5c1-d57435101daf" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Interceptor" comparator="GREATER" value="3000.0" />
+    <if_variable name="spotted_by_Interceptor" comparator="EQUALS" value="1.0" />
+    <set_timer name="Interceptor_spots_player" seconds="1000000" />
+    <set_variable name="spotted_by_Interceptor" value="0.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Evaded!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Interceptor Catches Player" id_arme="33da8123-efb7-402b-93ad-5d37a0ca7647" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Interceptor" comparator="LESS_EQUAL" value="3000.0" />
+    <if_variable name="spotted_by_Interceptor" comparator="EQUALS" value="1.0" />
+    <if_timer_finished name="Interceptor_spots_player" />
+    <set_variable name="player_spotted" value="1.0" integer="yes" />
+    <set_variable name="spotted_by_Interceptor" value="0.0" integer="yes" />
+  </event>
+  <event name="Diadem Senses Player" id_arme="3441b610-8f19-45ee-b54c-b814dc71a14a" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Opulent Diadem" comparator="LESS_EQUAL" value="3000.0" />
+    <if_object_property property="hasSurrendered" name="BAMF Opulent Diadem" comparator="NOT" value="1.0" />
+    <if_variable name="spotted_by_Diadem" comparator="EQUALS" value="0.0" />
+    <set_timer name="Diadem_spots_player" seconds="10" />
+    <set_variable name="spotted_by_Diadem" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Player Eludes Diadem" id_arme="ed01d834-aef2-42d6-aab3-5a23e17215a8" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Opulent Diadem" comparator="GREATER" value="3000.0" />
+    <if_variable name="spotted_by_Diadem" comparator="EQUALS" value="1.0" />
+    <set_timer name="Diadem_spots_player" seconds="1000000" />
+    <set_variable name="spotted_by_Diadem" value="0.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Evaded!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Diadem Catches Player" id_arme="6889f0a4-0377-473d-b93e-45150f60b041" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="BAMF Opulent Diadem" comparator="LESS_EQUAL" value="3000.0" />
+    <if_object_property property="hasSurrendered" name="BAMF Opulent Diadem" comparator="NOT" value="1.0" />
+    <if_variable name="spotted_by_Diadem" comparator="EQUALS" value="1.0" />
+    <if_timer_finished name="Diadem_spots_player" />
+    <set_variable name="player_spotted" value="1.0" integer="yes" />
+    <set_variable name="spotted_by_Diadem" value="0.0" integer="yes" />
+  </event>
+  <event name="Hotel Quebec Senses Player" id_arme="b7463c1e-1b39-4ab7-963e-a61b5c82026b" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="Hotel Quebec" comparator="LESS_EQUAL" value="2000.0" />
+    <if_variable name="spotted_by_station" comparator="EQUALS" value="0.0" />
+    <set_timer name="station_spots_player" seconds="10" />
+    <set_variable name="spotted_by_station" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Delta Sierra Niner Senses Player" id_arme="3067586b-d6c2-40b9-961d-b0ae10bdca97" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="Delta Sierra Niner" comparator="LESS_EQUAL" value="2000.0" />
+    <if_variable name="spotted_by_station" comparator="EQUALS" value="0.0" />
+    <set_timer name="station_spots_player" seconds="10" />
+    <set_variable name="spotted_by_station" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Notre Dame du Ciel Senses Player" id_arme="f1c3d584-c7ba-4d96-870b-4d3af611fc14" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="Notre Dame du Ciel" comparator="LESS_EQUAL" value="2000.0" />
+    <if_variable name="spotted_by_station" comparator="EQUALS" value="0.0" />
+    <set_timer name="station_spots_player" seconds="10" />
+    <set_variable name="spotted_by_station" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Fjord Meteor Company Senses Player" id_arme="ccdfcab8-62ff-4b15-aa8b-e973cfcf0bd1" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="Fjord Meteor Company" comparator="LESS_EQUAL" value="2000.0" />
+    <if_variable name="spotted_by_station" comparator="EQUALS" value="0.0" />
+    <set_timer name="station_spots_player" seconds="10" />
+    <set_variable name="spotted_by_station" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Obsidian Plateau Senses Player" id_arme="d390e840-9caa-475d-a59e-325552918cc1" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="Obsidian Plateau" comparator="LESS_EQUAL" value="2000.0" />
+    <if_variable name="spotted_by_station" comparator="EQUALS" value="0.0" />
+    <set_timer name="station_spots_player" seconds="10" />
+    <set_variable name="spotted_by_station" value="1.0" integer="yes" />
+    <warning_popup_message message="Enemy Scanners Detected!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Station Catches Player" id_arme="326eb6f7-dc20-4e55-9967-c0a9a7906bc5" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_timer_finished name="station_spots_player" />
+    <if_variable name="spotted_by_station" comparator="EQUALS" value="1.0" />
+    <set_variable name="player_spotted" value="1.0" integer="yes" />
+    <set_variable name="spotted_by_station" value="0.0" integer="yes" />
+  </event>
+  <event name="Player Eludes Stations" id_arme="a01bb315-3eb2-411b-8215-2df182203733" parent_id_arme="c2d5c948-16d2-4b0e-984a-bd373a1b4148">
+    <if_distance name1="Phantom_Pulsar" name2="Hotel Quebec" comparator="GREATER" value="2000.0" />
+    <if_distance name1="Phantom_Pulsar" name2="Delta Sierra Niner" comparator="GREATER" value="2000.0" />
+    <if_distance name1="Phantom_Pulsar" name2="Fjord Meteor Company" comparator="GREATER" value="2000.0" />
+    <if_distance name1="Phantom_Pulsar" name2="Obsidian Plateau" comparator="GREATER" value="2000.0" />
+    <if_distance name1="Phantom_Pulsar" name2="Notre Dame du Ciel" comparator="GREATER" value="2000.0" />
+    <if_variable name="spotted_by_station" comparator="EQUALS" value="1.0" />
+    <set_variable name="spotted_by_station" value="0.0" integer="yes" />
+    <set_timer name="station_spots_player" seconds="1000000" />
+    <warning_popup_message message="Enemy Scanners Evaded!" consoles="S" name="Phantom_Pulsar" />
+  </event>
+  <event name="Cover Blown" id_arme="496f1ad9-60cf-4c23-8721-04c2e95d2a44">
+    <if_variable name="player_spotted" comparator="EQUALS" value="1.0" />
+    <big_message title="Infiltration Failed" subtitle1="Your cover was blown!" subtitle2="Emergency time jump activated" />
+    <play_sound_now filename="dat\alarm1.wav" />
+    <play_sound_now filename="dat\jumpWarmup.wav" />
+    <set_timer name="reset_to_checkpoint1" seconds="3" />
+    <set_variable name="player_spotted" value="2.0" integer="yes" />
+  </event>
+  <event name="in_purple_neb" id_arme="89b2308c-271f-4b90-b997-286957aab34e">
+    <if_in_nebula name="Phantom_Pulsar" compare="1" />
+    <if_variable name="nebula_get" comparator="EQUALS" value="0.0" />
+    <set_variable name="nebula_get" value="1.0" integer="yes" />
+    <incoming_comms_text from="101101" sideValue="2" type="FRIEND">That nebula sample should do nicely.  Our scientists will begin their spectral analysis shortly, thanks to your efforts.  </incoming_comms_text>
+  </event>
+  <event name="Pirates_near_pigpen" id_arme="4a897f54-6f9d-4069-9bce-0b309608712a">
+    <if_variable name="threshold" comparator="NOT" value="2.0" />
+    <if_distance name1="Phantom_Pulsar" name2="Pigpen" comparator="LESS_EQUAL" value="5000.0" />
+    <set_variable name="threshold" value="2.0" integer="yes" />
+  </event>
+  <event name="Pirates_medium_pigpen" id_arme="8f9787d9-3714-481e-a690-e7b2296d22d0">
+    <if_variable name="threshold" comparator="NOT" value="1.0" />
+    <if_distance name1="Phantom_Pulsar" name2="Pigpen" comparator="GREATER_EQUAL" value="10000.0" />
+    <if_distance name1="Phantom_Pulsar" name2="Pigpen" comparator="LESS_EQUAL" value="15000.0" />
+    <set_variable name="threshold" value="1.0" integer="yes" />
+  </event>
+  <event name="Pirates_far_pigpen" id_arme="8d26e976-c15a-436a-b06a-0efc918c91a7">
+    <if_variable name="threshold" comparator="EQUALS" value="2.0" />
+    <if_distance name1="Phantom_Pulsar" name2="Pigpen" comparator="GREATER_EQUAL" value="15001.0" />
+    <set_variable name="zapped" value="1.0" integer="yes" />
+    <set_variable name="threshold" value="0.0" integer="yes" />
+    <incoming_comms_text from="101101" sideValue="2" type="FRIEND">The dark energy readings from that encounter are off the charts!  This data should help us better understand the Charybdis's aggression patterns.  </incoming_comms_text>
+  </event>
+  <event name="tagged_pigpen" id_arme="e2ad52ad-6c23-4e27-b6b6-00fe452e9b69">
+    <if_monster_tag_matches name="Pigpen" string="Phantom_Pulsar" />
+    <if_variable name="tagged_pigpen" comparator="EQUALS" value="0.0" />
+    <set_variable name="tagged_pigpen" value="1.0" integer="yes" />
+    <incoming_comms_text from="101101" sideValue="2" type="FRIEND">Brilliant!  We can now track the movements of the Charybdis beyond the shroud of its flatulence.</incoming_comms_text>
+  </event>
+  <event name="PuzzleSolved" id_arme="3da4e5c3-e5d4-4f03-9374-46d702793dd7">
+    <if_variable name="FMC_shrouded" comparator="EQUALS" value="0.0" />
+    <if_variable name="nebula_get" comparator="EQUALS" value="1.0" />
+    <if_variable name="tagged_pigpen" comparator="EQUALS" value="1.0" />
+    <if_variable name="zapped" comparator="EQUALS" value="1.0" />
+    <incoming_comms_text from="101101" sideValue="2" type="FRIEND">Excellent work, Phantom_Pulsar.  Your reward is ready for pickup, as promised.</incoming_comms_text>
+    <set_ship_text name="101101" scan_desc="Need a hint? Hail this ship." hailtext="After the Diadem surrenders, use the shuttle to transfer personnel between vessels" />
+    <create type="Anomaly" pickupType="7" x="33426.0" y="0.0" z="89445.0" name="Override Protocols" />
+    <set_variable name="FMC_shrouded" value="1.0" integer="yes" />
+  </event>
+  <event name="Diadem Gone" id_arme="93ad4164-6275-4732-9f07-b14a1cf02a7a">
+    <if_variable name="player_spotted" comparator="EQUALS" value="1.0" />
+    <if_exists name="Phantom_Pulsar" />
+    <if_not_exists name="BAMF Opulent Diadem" />
+    <big_message title="Infiltration Failed" subtitle1="The Diadem was destroyed!" subtitle2="Emergency time jump activated" />
+    <set_variable name="player_spotted" value="2.0" integer="yes" />
+    <play_sound_now filename="dat\jumpWarmup.wav" />
+    <set_timer name="reset_to_checkpoint1" seconds="3" />
+  </event>
+  <event name="Destroy Ships" id_arme="f0436c51-1fca-4dbd-bbac-e58c71a0ba1c">
+    <if_timer_finished name="reset_to_checkpoint1" />
+    <if_variable name="player_spotted" comparator="EQUALS" value="2.0" />
+    <destroy name="Phantom_Pulsar" />
+    <destroy name="BAMF Opulent Diadem" />
+    <destroy name="BAMF Brawny" />
+    <destroy name="BAMF Obstinant" />
+    <destroy name="BAMF Sheriff" />
+    <destroy name="BAMF Interceptor" />
+    <destroy name="BAMF Deputy" />
+    <set_variable name="player_spotted" value="3.0" integer="yes" />
+    <set_variable name="chapter_1" value="4.0" integer="yes" />
+    <play_sound_now filename="dat\WarpTravel.wav" />
+    <set_timer name="reset_to_checkpoint1" seconds="1000000" />
+  </event>
+  <event name="Reset to checkpoint 1" id_arme="ef63a6b6-a44f-4d17-9f80-2bba6e8074e5">
+    <if_variable name="chapter_1" comparator="EQUALS" value="4.0" />
+    <if_not_exists name="Phantom_Pulsar" />
+    <set_variable name="chapter_1" value="1.0" integer="yes" />
+    <create type="player" player_slot="0" x="12433.0" y="0.0" z="96478.0" angle="307.2" name="Phantom_Pulsar" sideValue="2" raceKeys="Pirate" hullKeys="Longbow" warp="no" jump="yes" />
+  </event>
+  <event name="StopDiadem" id_arme="718ddb30-dcc7-421c-b1b3-a2bd195afb61">
+    <if_object_property property="hasSurrendered" name="BAMF Opulent Diadem" comparator="NOT" value="0" />
+    <if_variable name="diadem_stop" comparator="EQUALS" value="0.0" />
+    <clear_ai name="BAMF Opulent Diadem" />
+    <add_ai type="TARGET_THROTTLE" value1="0.0" targetName="Phantom_Pulsar" value2="1" name="BAMF Opulent Diadem" />
+    <incoming_comms_text from="BAMF Opulent Diadem" sideValue="2" type="FRIEND">Ready to accept your boarding party.  To transfer command of this ship, send over crew members in your shuttle and follow the instructions on your comms console.</incoming_comms_text>
+    <set_variable name="diadem_stop" value="1.0" integer="yes" />
+  </event>
+  <event name="No seriously, no despawning diadem" id_arme="b4bd4ca4-7205-481c-8d0e-956795565157">
+    <if_object_property property="positionX" name="BAMF Opulent Diadem" comparator="LESS" value="1000.0" />
+    <set_object_property property="positionX" value="1250.0" name="BAMF Opulent Diadem" />
+  </event>
+  <event name="Player May Capture Diadem" id_arme="8c6d085d-0100-4949-be4d-05573f8b34dd">
+    <if_distance name1="Capacious_Capsule" name2="BAMF Opulent Diadem" comparator="LESS_EQUAL" value="500.0" />
+    <if_variable name="ship_captured" comparator="EQUALS" value="0.0" />
+    <if_exists name="Phantom_Pulsar" />
+    <if_object_property property="hasSurrendered" name="BAMF Opulent Diadem" comparator="NOT" value="0.0" />
+    <set_variable name="ship_captured" value="1.0" integer="yes" />
+    <set_comms_button text="Reroute comms to shuttle, Capture Diadem and detonate charges on Pulsar" sideValue="2" />
+    <clear_ai name="BAMF Opulent Diadem" />
+    <add_ai type="TARGET_THROTTLE" value1="0.0" targetName="Capacious_Capsule" value2="1" name="BAMF Opulent Diadem" />
+  </event>
+  <event name="Player takes Diadem" id_arme="2afdea1b-ec35-42d2-9d72-3977518deefb">
+    <if_variable name="ship_captured" comparator="EQUALS" value="1.0" />
+    <if_comms_button text="Reroute comms to shuttle, Capture Diadem and detonate charges on Pulsar" />
+    <clear_comms_button text="Reroute comms to shuttle, Capture Diadem and detonate charges on Pulsar" />
+    <destroy name="Phantom_Pulsar" />
+    <set_variable name="ship_captured" value="2.0" integer="yes" />
+    <destroy name="BAMF Opulent Diadem" />
+  </event>
+  <event name="Player becomes Diadem" id_arme="fe8de93f-4eee-4006-8ccc-e13cb9391fda">
+    <if_variable name="ship_captured" comparator="EQUALS" value="2.0" />
+    <set_variable name="ship_captured" value="3.0" integer="yes" />
+    <create type="player" player_slot="0" x="3214.0" y="0.0" z="38245.0" angle="321.2" name="Opulent_Diadem" sideValue="2" raceKeys="Ximni" hullKeys="Battleship" warp="no" jump="yes" />
+  </event>
+  <event name="Act 2" id_arme="4f3275e0-59fd-4f54-af51-61c1519643b7">
+    <if_variable name="ship_captured" comparator="EQUALS" value="3.0" />
+    <set_relative_position name2="Opulent_Diadem" distance="250" angle="0" name1="Capacious_Capsule" />
+    <set_variable name="ship_captured" value="4.0" integer="yes" />
+    <add_ai type="CHASE_PLAYER" value2="0" name="BAMF Brawny" />
+    <add_ai type="CHASE_PLAYER" value2="0" name="BAMF Obstinant" />
+    <add_ai type="CHASE_PLAYER" value2="0" name="BAMF Sheriff" />
+    <add_ai type="CHASE_PLAYER" value2="0" name="BAMF Interceptor" />
+    <add_ai type="CHASE_PLAYER" value2="0" name="BAMF Deputy" />
+    <create type="enemy" x="42111.0" y="0.0" z="17503.0" angle="119.7" name="RepoShip0" raceKeys="Kralien" hullKeys="Cruiser" sideValue="1" fleetnumber="4" />
+    <create type="enemy" x="43269.0" y="0.0" z="18082.0" angle="119.6" name="RepoShip1" raceKeys="Kralien" hullKeys="Cruiser" sideValue="1" fleetnumber="4" />
+    <create type="enemy" x="43125.0" y="0.0" z="16634.0" angle="121.6" name="RepoShip2" raceKeys="Kralien" hullKeys="Cruiser" sideValue="1" fleetnumber="4" />
+    <create type="enemy" x="50218.0" y="0.0" z="30820.0" angle="82.3" name="TerranMercenary" raceKeys="TSN" hullKeys="Battleship" sideValue="1" fleetnumber="4" />
+    <set_special name="TerranMercenary" ability="Warp" />
+    <set_ship_text name="101101" hailtext="Without access to a base, you need a vigoranium nodule to replenish your damcon teams.  " />
+    <set_ship_text name="TerranMercenary" desc="May hold the secret to solving your damcon problem" scan_desc="Guaranteed vigoranium nodule drop on kill or surrender" />
+    <add_ai type="CHASE_PLAYER" value2="0" name="TerranMercenary" />
+    <set_relative_position name2="BAMF Sheriff" distance="250" angle="90" name1="RepoShip0" />
+    <set_relative_position name2="BAMF Interceptor" distance="250" angle="180" name1="RepoShip1" />
+    <set_relative_position name2="BAMF Deputy" distance="250" angle="270" name1="RepoShip2" />
+    <set_variable name="chapter_1" value="5.0" integer="yes" />
+    <set_damcon_members value="0" team_index="0" name="Opulent_Diadem" />
+    <set_damcon_members value="0" team_index="1" name="Opulent_Diadem" />
+    <set_damcon_members value="0" team_index="2" name="Opulent_Diadem" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="0" systemType="systemWarp" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="1" systemType="systemWarp" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="2" systemType="systemWarp" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="3" systemType="systemWarp" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="4" systemType="systemWarp" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="5" systemType="systemWarp" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="0" systemType="systemImpulse" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="1" systemType="systemImpulse" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="2" systemType="systemImpulse" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="3" systemType="systemImpulse" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="4" systemType="systemImpulse" countFrom="front" />
+    <set_player_grid_damage value="1.0" name="Opulent_Diadem" index="5" systemType="systemImpulse" countFrom="front" />
+    <set_object_property property="positionX" value="90000.0" name="101101" />
+    <set_object_property property="positionZ" value="10000.0" name="101101" />
+    <incoming_comms_text from="101101" sideValue="2" type="FRIEND">Congratulations on becoming the proud owner of your very own Ximni Battleship!  Looks a little worse for the wear, and you seem to be short on a repair crew.  We know a way out of here, but it won't be any use to you as long as your ship is broken.  Fix it up, then rendezvous with us when you're ready to go.  Meanwhile, we'll keep our interdimensional shortcut open for you.  Good luck.  </incoming_comms_text>
+  </event>
+  <event name="Respawn101101" id_arme="571dcc1c-c8ff-4d4f-9646-3bae39c95ac7">
+    <if_not_exists name="101101" />
+    <create type="neutral" x="90000.0" y="0.0" z="10000.0" angle="0" name="101101" raceKeys="Arvonian" hullKeys="Light Carrier" />
+  </event>
+  <event name="TerranMercsDie" id_arme="b2ea6f0c-2682-4fdf-908b-9a973f33c92e">
+    <if_variable name="ship_captured" comparator="EQUALS" value="4.0" />
+    <if_variable name="vig_node_dropped" comparator="EQUALS" value="0.0" />
+    <if_not_exists name="TerranMercenary" />
+    <create type="Anomaly" pickupType="1" x="100000.0" y="0.0" z="0.0" name="Medical Supplies" />
+    <set_variable name="vig_node_dropped" value="1.0" integer="yes" />
+  </event>
+  <event name="Vig Node Move1" id_arme="38325ac1-ad12-4e2b-b072-0059ef726049">
+    <if_variable name="vig_node_dropped" comparator="EQUALS" value="1.0" />
+    <set_variable name="vig_node_dropped" value="3.0" integer="yes" />
+    <set_relative_position name2="Medical Supplies" distance="500" angle="0" name1="Opulent_Diadem" />
+  </event>
+  <event name="TerranMercsSurrender" id_arme="18465db8-9859-4914-aa56-b96ed698e9e5">
+    <if_variable name="vig_node_dropped" comparator="EQUALS" value="0.0" />
+    <if_object_property property="hasSurrendered" name="TerranMercenary" comparator="EQUALS" value="1" />
+    <create type="Anomaly" pickupType="1" x="100000.0" y="0.0" z="0.0" name="Medical Supplies" />
+    <set_variable name="vig_node_dropped" value="2.0" integer="yes" />
+  </event>
+  <event name="Vig Node Move2" id_arme="a9479d09-bea5-4a51-bff5-7f89dd1cbf59">
+    <if_variable name="vig_node_dropped" comparator="EQUALS" value="2.0" />
+    <set_variable name="vig_node_dropped" value="3.0" integer="yes" />
+    <set_relative_position name2="Medical Supplies" distance="500" angle="180" name1="TerranMercenary" />
+  </event>
+  <event name="Event 51" id_arme="4d5df999-ceca-4a25-85ed-61eaa90b3b3b">
+    <if_distance name1="Opulent_Diadem" name2="101101" comparator="LESS_EQUAL" value="500.0" />
+    <if_damcon_members name="Opulent_Diadem" team_index="0" comparator="GREATER" value="0" />
+    <if_variable name="chapter_1" comparator="EQUALS" value="5.0" />
+    <set_timer name="game_end" seconds="10" />
+    <big_message title="You Win!" subtitle1="All hail the new pirate king!" subtitle2="Yo ho!" />
+    <set_variable name="chapter_1" value="6.0" integer="yes" />
+  </event>
+  <event name="Event 52" id_arme="9b4bd521-9b49-4a94-b307-375af7350bf1">
+    <if_timer_finished name="game_end" />
+    <end_mission />
+  </event>
+</mission_data>
