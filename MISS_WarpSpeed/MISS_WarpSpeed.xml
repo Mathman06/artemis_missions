@@ -1,0 +1,20 @@
+<mission_data version="1.0" background_id_arme="f8cda723-f5c3-4041-8b49-79452c34bbf8" playerShipNames_arme="Star Legend\Intrepid\Aegis\Horatio\Excalibur\Hera\Ceres\Diana">
+  <mission_description>Pop Quiz, Hot Shots:  There's a bomb on a spaceship.  Once the ship reaches warp 2, the bomb is on.  If it drops below warp 2, it blows up.  What do you do? What do you DO?  </mission_description>
+  <start id_arme="f8cda723-f5c3-4041-8b49-79452c34bbf8">
+    <create count="20" type="nebulas" startX="97641.0" startY="0.0" startZ="90286.0" endX="8149.0" endY="0.0" endZ="1108.0" />
+    <create count="20" type="nebulas" startX="89662.0" startY="0.0" startZ="98265.0" endX="1735.0" endY="0.0" endZ="8305.0" />
+    <create type="player" x="94668.0" y="0.0" z="98265.0" angle="44.7" name="Star Legend" />
+    <set_difficulty_level value="5" />
+    <set_skybox_index index="10" />
+    <set_object_property property="nebulaIsOpaque" value="0" />
+    <set_object_property property="sensorSetting" value="1" />
+    <set_object_property property="nonPlayerSpeed" value="100" />
+    <set_object_property property="nonPlayerShield" value="100" />
+    <set_object_property property="nonPlayerWeapon" value="100" />
+    <set_object_property property="playerWeapon" value="100" />
+    <set_object_property property="playerShields" value="100" />
+    <big_message title="Warp Speed: Crews Control" subtitle1="by Matthew Vicksell" subtitle2="adventure for Artemis 2.7" />
+    <set_timer name="start_mission_timer_1" seconds="10" />
+    <set_object_property property="warpState" value="2" name="Star Legend" />
+  </start>
+</mission_data>
