@@ -1,11 +1,10 @@
 <mission_data version="1.0" background_id_arme="f8cda723-f5c3-4041-8b49-79452c34bbf8" playerShipNames_arme="Star Legend\Intrepid\Aegis\Horatio\Excalibur\Hera\Ceres\Diana">
   <mission_description>Pop Quiz, Hot Shots:  There's a bomb on a spaceship.  Once the ship reaches warp 2, the bomb is on.  If it drops below warp 2, it blows up.  What do you do? What do you DO?  </mission_description>
   <start id_arme="f8cda723-f5c3-4041-8b49-79452c34bbf8">
-    <create count="20" type="nebulas" startX="97641.0" startY="0.0" startZ="90286.0" endX="8149.0" endY="0.0" endZ="1108.0" />
-    <create count="20" type="nebulas" startX="89662.0" startY="0.0" startZ="98265.0" endX="1735.0" endY="0.0" endZ="8305.0" />
-    <create type="player" player_slot="0" x="96702.0" y="0.0" z="98578.0" angle="44.1" name="Star Legend" sideValue="2" raceKeys="TSN" hullKeys="Carrier" warp="yes" jump="no" />
+    <create type="player" player_slot="0" x="96702.0" y="0.0" z="98578.0" angle="0" name="Star Legend" sideValue="2" raceKeys="TSN" hullKeys="Carrier" warp="yes" jump="no" />
+    <create type="neutral" x="50104.0" y="0.0" z="50103.0" angle="0" name="Annie" raceKeys="Terran" hullKeys="Destroyer" />
     <set_difficulty_level value="5" />
-    <set_skybox_index index="10" />
+    <set_skybox_index index="29" />
     <set_object_property property="nebulaIsOpaque" value="0" />
     <set_object_property property="sensorSetting" value="1" />
     <set_object_property property="nonPlayerSpeed" value="100" />
@@ -14,7 +13,32 @@
     <set_object_property property="playerWeapon" value="100" />
     <set_object_property property="playerShields" value="100" />
     <big_message title="Warp Speed: Crews Control" subtitle1="by Matthew Vicksell" subtitle2="adventure for Artemis 2.7" />
+    <set_timer name="rotate_ship" seconds="10" />
     <set_timer name="start_mission_timer_1" seconds="10" />
+    <set_variable name="angle_set" value="0.0" integer="yes" />
+    <set_variable name="start" value="0.0" integer="yes" />
     <set_object_property property="warpState" value="2" name="Star Legend" />
   </start>
+  <event id_arme="7eeecac8-c4e7-4725-b8a0-b904cbcada8d">
+    <if_variable name="start" comparator="EQUALS" value="0.0" />
+    <add_ai type="FOLLOW_COMMS_ORDERS" name="Annie" />
+    <set_variable name="start" value="1.0" integer="yes" />
+    <get_object_property property="angle" name="Annie" variable="bind_angle" />
+  </event>
+  <event id_arme="f5e5862b-bf5c-4d1b-a284-dcff02dfb2e7">
+    <if_variable name="angle_set" comparator="EQUALS" value="0.0" />
+    <set_object_property property="angle" value="bind_angle" name="Star Legend" />
+    <set_variable name="angle_set" value="1.0" integer="yes" />
+  </event>
+  <event id_arme="09d91fcb-27aa-459d-90aa-6cb356c3045a">
+    <if_variable name="angle_set" comparator="EQUALS" value="1.0" />
+    <set_variable name="angle_set" value="0.0" integer="yes" />
+    <get_object_property property="angle" name="Annie" variable="bind_angle" />
+  </event>
+  <event id_arme="a77240e7-545e-49aa-898f-8a1deee3ca16">
+    <if_variable name="start" comparator="EQUALS" value="1.0" />
+    <if_object_property property="warpState" name="Star Legend" comparator="LESS" value="2" />
+    <destroy name="Star Legend" />
+    <play_sound_now filename="dat\enemy-explode.wav" />
+  </event>
 </mission_data>
